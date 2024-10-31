@@ -1,0 +1,26 @@
+{
+  "name": "file_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "go": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@preline/file-upload": "^2.5.0",
+    "dropzone": "^6.0.0-beta.2",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "ip": "^2.0.1",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
