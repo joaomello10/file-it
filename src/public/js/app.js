@@ -20,7 +20,7 @@ const fileElem = document.getElementById("fileElem");
 dropArea.addEventListener("drop", handleDrop, false);
 
 // Funcionalidade de clique para seleção de arquivos
-fileElem.addEventListener("change", handleFiles, false);
+fileElem.addEventListener("change", () => handleFiles(fileElem.files), false);
 
 function preventDefaults(e) {
   e.preventDefault();

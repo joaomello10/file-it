@@ -119,12 +119,14 @@
 </main>
 <script src="../public/js/qrcode.js"></script>
 <script>
+    document.querySelector('#form-upload').reset() 
     new QRCode(document.getElementById("qrcode-m"), "http://<%= machineIp %>:3000");
 
     function openModal(e) {
-  new QRCode(document.getElementById("qrcode"), `http://<%= machineIp %>:3000${e.id}`);
+        document.getElementById("qrcode").innerHTML = ''
 
-  document.getElementById("myModal").style.display = "flex";
+    new QRCode(document.getElementById("qrcode"), `http://<%= machineIp %>:3000${e.id}`);
+    document.getElementById("myModal").style.display = "flex";
 }
 
 function closeModal() {
